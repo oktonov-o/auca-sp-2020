@@ -7,7 +7,7 @@ public class problem05 {
         double firstDouble = inp.nextDouble();
         System.out.print("2nd double? ");
         double secondDouble = inp.nextDouble();
-        System.out.println(firstDouble+" + "+secondDouble+" = "+firstDouble+secondDouble);
+        System.out.print(firstDouble+" + "+secondDouble+" = ");System.out.println(firstDouble+secondDouble);
         System.out.print(firstDouble+" - "+secondDouble+" = ");System.out.println(firstDouble-secondDouble);
         System.out.println(firstDouble+" * "+secondDouble+" = "+firstDouble*secondDouble);
         System.out.println(firstDouble+" / "+secondDouble+" = "+firstDouble/secondDouble);
