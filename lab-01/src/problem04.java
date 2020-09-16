@@ -7,7 +7,7 @@ public class problem04 {
         int firstInt = inp.nextInt();
         System.out.print("2nd int? ");
         int secondInt = inp.nextInt();
-        System.out.println(firstInt+" + "+secondInt+" = "+firstInt+secondInt);
+        System.out.print(firstInt+" + "+secondInt+" = ");System.out.println(firstInt+secondInt);
         System.out.print(firstInt+" - "+secondInt+" = ");System.out.println(firstInt-secondInt);
         System.out.println(firstInt+" * "+secondInt+" = "+firstInt*secondInt);
         System.out.println(firstInt+" / "+secondInt+" = "+firstInt/secondInt);
