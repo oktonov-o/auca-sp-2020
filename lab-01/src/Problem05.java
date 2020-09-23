@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class problem05 {
+public class Problem05 {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
         System.out.print("1st double? ");

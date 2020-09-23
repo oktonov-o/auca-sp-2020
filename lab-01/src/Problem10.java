@@ -1,4 +1,4 @@
-public class problem10 {
+public class Problem10 {
     public static void main(String[] args) {
         int currentPop = 312032486;
         int secondsPerYear = 365*24*60*60;

@@ -1,4 +1,4 @@
-public class problem09 {
+public class Problem09 {
     public static void main(String[] args) {
         double pi=0;
         double pi_v2=0;
