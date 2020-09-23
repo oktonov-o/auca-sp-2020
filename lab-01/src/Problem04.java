@@ -10,7 +10,7 @@ public class Problem04 {
         System.out.print(firstInt+" + "+secondInt+" = ");System.out.println(firstInt+secondInt);
         System.out.print(firstInt+" - "+secondInt+" = ");System.out.println(firstInt-secondInt);
         System.out.println(firstInt+" * "+secondInt+" = "+firstInt*secondInt);
-        System.out.println(firstInt+" / "+secondInt+" = "+firstInt/secondInt);
+        System.out.println(firstInt+" / "+secondInt+" = "+1.0*firstInt/secondInt);
         System.out.println(firstInt+" % "+secondInt+" = "+firstInt%secondInt);
 
     }
