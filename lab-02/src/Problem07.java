@@ -9,6 +9,6 @@ public class Problem07 {
         double area=r*r*Math.PI;
         double volume=area*l;
         System.out.printf("The area is %.4f%n",area);
-        System.out.printf("The volume is %.1f",volume);
+        System.out.printf("The volume is %.1f%n",volume);
     }
 }

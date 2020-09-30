@@ -5,7 +5,8 @@ public class Problem04 {
         Scanner inp = new Scanner(System.in);
         System.out.print("Length in inches? ");
         int inch = inp.nextInt();
-        System.out.println(inch + " in. = " + inch * 2.54 + " cm.");
+        final double INCH_IN_CM = 2.54;
+        System.out.println(inch + " in. = " + inch * INCH_IN_CM + " cm.");
 
     }
 }
