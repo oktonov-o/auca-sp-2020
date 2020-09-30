@@ -6,6 +6,6 @@ public class Problem06 {
         System.out.print("Enter a degree in Celsius: ");
         double cel = inp.nextDouble();
         double fah = 9.0 / 5 * cel + 32;
-        System.out.printf("%s Celsius is %.1f Fahrenheit", cel, fah);
+        System.out.printf("%s Celsius is %.1f Fahrenheit%n", cel, fah);
     }
 }
