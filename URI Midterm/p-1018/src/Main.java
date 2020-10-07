@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
         int cash = inp.nextInt();
-        int c100 = cash/100;
-        int c50 = cash%100/50;
-        int c20 = cash%100%50/20;
-        int c10 = cash%100%50%20/10;
-        int c5 = cash%100%50%20%10/5;
-        int c2 = cash%100%50%20%10%5/2;
-        int c1 = cash%100%50%20%10%5%2;
+        int c100 = cash / 100;
+        int c50 = cash % 100 / 50;
+        int c20 = cash % 100 % 50 / 20;
+        int c10 = cash % 100 % 50 % 20 / 10;
+        int c5 = cash % 100 % 50 % 20 % 10 / 5;
+        int c2 = cash % 100 % 50 % 20 % 10 % 5 / 2;
+        int c1 = cash % 100 % 50 % 20 % 10 % 5 % 2;
 
         System.out.println(cash);
         System.out.printf("%d nota(s) de R$ 100,00%n", c100);
