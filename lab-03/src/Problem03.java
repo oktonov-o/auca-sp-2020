@@ -9,9 +9,9 @@ public class Problem03 {
         int b = inp.nextInt();
         System.out.print("3rd number? ");
         int c = inp.nextInt();
-        if (a>=b && a>=c){
+        if (a >= b && a >= c) {
             System.out.printf("The value %d is the greatest one.", a);
-        } else if (b>=a && b>=c){
+        } else if (b >= a && b >= c) {
             System.out.printf("The value %d is the greatest one.", b);
         } else {
             System.out.printf("The value %d is the greatest one.", c);

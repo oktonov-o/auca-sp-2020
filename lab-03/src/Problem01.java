@@ -5,10 +5,10 @@ public class Problem01 {
         Scanner inp = new Scanner(System.in);
         System.out.print("some real number? ");
         double number = inp.nextDouble();
-        if(number>=0){
-            System.out.println("|"+number+"| = "+number);
+        if (number >= 0) {
+            System.out.println("|" + number + "| = " + number);
         } else {
-            System.out.println("|"+number+"| = "+(-1)*number);
+            System.out.println("|" + number + "| = " + (-1) * number);
         }
     }
 }

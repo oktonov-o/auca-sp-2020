@@ -5,7 +5,7 @@ public class Problem02 {
         Scanner inp = new Scanner(System.in);
         System.out.print("Number of points? ");
         double number = inp.nextDouble();
-        if(number>=40){
+        if (number >= 40) {
             System.out.println("You passed \"Structured Programming\"!!!");
             System.out.println("You should take \"Object-Oriented Programming\" in the next semester");
         } else {
