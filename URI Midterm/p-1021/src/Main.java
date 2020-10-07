@@ -41,6 +41,7 @@ public class Main {
         System.out.printf("%d moeda(s) de R$ 0,50%n", c50);
         System.out.printf("%d moeda(s) de R$ 0,25%n", c25);
         System.out.printf("%d moeda(s) de R$ 0,10%n", c10);
+        System.out.printf("%d moeda(s) de R$ 0,05%n", c5);
         System.out.printf("%d moeda(s) de R$ 0,01%n", c1);
     }
 }
