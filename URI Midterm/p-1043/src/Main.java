@@ -7,7 +7,7 @@ public class Main {
         double b = inp.nextDouble();
         double c = inp.nextDouble();
 
-        if(a+b>c && a+c>b && b+c>a){
+        if( a+b>c && a+c>b && b+c>a){
             double p=a+b+c;
             System.out.printf("Perimetro = %.1f%n", p);
         } else {
