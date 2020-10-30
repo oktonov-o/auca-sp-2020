@@ -1,4 +1,4 @@
-public class Main {
+public class Problem01 {
 
   public static void main(String[] args) {
         double d = 0.1;
