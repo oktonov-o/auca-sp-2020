@@ -6,36 +6,22 @@ public class Main {
         String first = inp.nextLine();
         String second = inp.nextLine();
         String third = inp.nextLine();
-        String animal;
-        if (first.equals("vertebrado")){
-            if (second.equals("ave")){
-                if (third.equals("carnivoro")){
-                    animal = "aguia";
-                } else {
-                    animal = "pomba";
-                }
-            } else {
-                if (third.equals("onivoro")){
-                    animal = "homem";
-                } else {
-                    animal = "vaca";
-                }
-            }
-        } else {
-            if (second.equals("inseto")){
-                if (third.equals("hematofago")){
-                    animal = "pulga";
-                } else {
-                    animal = "lagarta";
-                }
-            } else {
-                if (third.equals("hematofago")){
-                    animal = "sanguessugo";
-                } else {
-                    animal = "minhoca";
-                }
-            }
+        if (first.equals("vertebrado")  && second.equals("ave") && third.equals("carnivoro")) {
+            System.out.println("aguia");
+        } else if (first.equals("vertebrado") && second.equals("ave") && third.equals("onivoro")) {
+            System.out.println("pomba");
+        } else if (first.equals("vertebrado") && second.equals("mamifero") && third.equals("onivoro")) {
+            System.out.println("homem");
+        } else if (first.equals("vertebrado") && second.equals("mamifero") && third.equals("herbivoro")) {
+            System.out.println("vaca");
+        } else if (first.equals("invertebrado") && second.equals("inseto") && third.equals("hematofago")) {
+            System.out.println("pulga");
+        } else if (first.equals("invertebrado") && second.equals("inseto") && third.equals("herbivoro")) {
+            System.out.println("lagarta");
+        } else if (first.equals("invertebrado") && second.equals("anelideo") && third.equals("hematofago")) {
+            System.out.println("sanguessuga");
+        } else if (first.equals("invertebrado") && second.equals("anelideo") && third.equals("onivoro")) {
+            System.out.println("minhoca");
         }
-        System.out.println(animal);
     }
 }
