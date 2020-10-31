@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        double salary = inp.nextInt();
+        double salary = inp.nextDouble();
         if (salary <= 2000){
             System.out.println("Isento");
         } else if (salary <= 3000){
