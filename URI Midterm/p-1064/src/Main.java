@@ -13,6 +13,7 @@ public class Main {
             }
         }
         System.out.println(cnt + " valores positivos");
-        System.out.println(sum/cnt);
+        double answer = sum/cnt;
+        System.out.printf("%.1f%n", answer);
     }
 }
