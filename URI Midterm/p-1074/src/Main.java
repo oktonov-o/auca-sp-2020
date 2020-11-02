@@ -13,7 +13,7 @@ public class Main {
             } else if (x % 2 ==0 && x > 0){
                 answer[i]="EVEN POSITIVE";
             } else if (x % 2 ==0 && x < 0){
-                answer[i]="EVEN NEGATIVE ";
+                answer[i]="EVEN NEGATIVE";
             } else if (x > 0){
                 answer[i]="ODD POSITIVE";
             } else {
