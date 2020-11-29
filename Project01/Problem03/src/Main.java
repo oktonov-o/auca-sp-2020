@@ -1,4 +1,5 @@
 import processing.core.*;
+
 import java.util.Scanner;
 
 public class Main extends PApplet {
@@ -25,21 +26,21 @@ public class Main extends PApplet {
 
         //first word
         textSize(100);
-        text(firstWord, firstX, height/4f);
+        text(firstWord, firstX, height / 4f);
 
         //second word
         textSize(100);
-        text(secondWord, secondX, 3*height/4f);
+        text(secondWord, secondX, 3 * height / 4f);
 
-        if (firstX >= width - firstWord.length() || firstX <= 0){
+        if (firstX >= width - firstWord.length() || firstX <= 0) {
             speedFirst *= (-1);
         }
-        if (secondX >= width - secondWord.length() || secondX <= 0){
+        if (secondX >= width - secondWord.length() || secondX <= 0) {
             speedSecond *= (-1);
         }
 
-        firstX+=speedFirst;
-        secondX+=speedSecond;
+        firstX += speedFirst;
+        secondX += speedSecond;
     }
 
     public static void main(String[] args) {
