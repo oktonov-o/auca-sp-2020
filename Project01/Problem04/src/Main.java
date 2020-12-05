@@ -22,8 +22,8 @@ public class Main extends PApplet {
         distance = (6*height/8f)/numOfSquares;
         circleX = x1 + distance/2;
         circleY = y1 + distance/2;
-        frameRate(20);
         wordOnTop = "Press Arrow buttons";
+        frameRate(20);
     }
 
     public void draw() {
@@ -67,7 +67,6 @@ public class Main extends PApplet {
                 speedY = 0;
                 wordOnTop += "LEFT";
             }
-
         }
         fill(0);
         rect(0,0,width,height/8f);
@@ -75,9 +74,12 @@ public class Main extends PApplet {
         textAlign(CENTER);
         text(wordOnTop,width/2f, height/16f);
 
-
         circleX += speedX;
         circleY += speedY;
+        if (circleX < x1 || circleX > x1+numOfSquares*distance || circleY < y1 || circleY > y1+numOfSquares*distance) {
+            circleX -= speedX;
+            circleY -= speedY;
+        }
     }
 
     public static void main(String[] args) {
