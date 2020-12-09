@@ -8,14 +8,23 @@ public class Problem04 {
         int a = inp.nextInt();
         System.out.print("B = ");
         int b = inp.nextInt();
-        int tempA = a, tempB = b;
 
-        while (b > 0){
-            a %= b;
-            int temp = a;
-            a = b;
-            b = temp;
+        if (a == 0 && b == 0){
+            System.out.println("GCD is undefined!");
+        } else {
+            System.out.printf("GCD(%d, %d) = %d", a, b, GCD(a,b));
         }
-        System.out.printf("GCD(%d, %d) = %d", tempA, tempB, a);
+    }
+
+    public static int GCD(int a, int b) {
+        a = Math.abs(a);
+        b = Math.abs(b);
+        int r;
+        while (b != 0){
+            r = a % b;
+            a = b;
+            b = r;
+        }
+        return a;
     }
 }
