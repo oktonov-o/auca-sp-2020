@@ -9,10 +9,16 @@ public class Problem05 {
         System.out.print("B = ");
         int b = inp.nextInt();
 
-        System.out.printf("GCD(%d, %d) = %d", a, b, GCD(a,b));
+        if (a == 0 && b == 0){
+            System.out.println("GCD is undefined!");
+        } else {
+            System.out.printf("GCD(%d, %d) = %d", a, b, GCD(a,b));
+        }
     }
 
     public static int GCD(int a, int b) {
+        a = Math.abs(a);
+        b = Math.abs(b);
         while (b > 0){
             a %= b;
             int temp = a;
