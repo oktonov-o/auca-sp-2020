@@ -4,20 +4,23 @@ public class Problem07 {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
 
+        System.out.print("Enter an integer: ");
         int n = inp.nextInt();
 
-        System.out.println(isPollindrome(n));
+        System.out.println("It is palindrome: " + isPalindrome(n));
+        System.out.println(reverse(n));
     }
 
-    public static boolean isPollindrome (int n) {
-        if (n == inverse(n)){
+    public static boolean isPalindrome (int n) {
+        if (n == reverse(n)){
             return true;
         } else {
             return false;
         }
     }
-    public static int inverse (int n) {
-        int num=0, ten = 1;
+    public static int reverse (int n) {
+        int num=0;
+        double ten = 0.1;
         int tempN = n;
         while (tempN>0){
             ten *= 10;
