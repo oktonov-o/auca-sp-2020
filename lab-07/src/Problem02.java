@@ -7,18 +7,24 @@ public class Problem02 {
 
         System.out.print("Month: ");
 
-        while (inp.hasNext()){
+        while (true){
 
+            System.out.print("Month: ");
             int month = inp.nextInt();
+            if (!inp.hasNext()){
+                break;
+            }
             System.out.print("Year: ");
             int year = inp.nextInt();
+            if (!inp.hasNext()){
+                break;
+            }
 
             if (year % 4==0 && year % 100 != 0 || year%400==0){
                 days[1]=29;
             }
 
             System.out.println("Days: "+ days[month-1]);
-            System.out.print("Month: ");
         }
     }
 }
