@@ -3,9 +3,13 @@ import java.util.Scanner;
 public class Problem03 {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        int[] myArr = new int[5];
 
-        for (int i=0; i<5; i++){
+        System.out.print("N: ");
+        int n = inp.nextInt();
+
+        int[] myArr = new int[n];
+
+        for (int i=0; i<myArr.length; i++){
             System.out.printf("Enter %d element: ", i);
             myArr[i] = inp.nextInt();
         }
@@ -16,17 +20,17 @@ public class Problem03 {
     }
 
     private static void reverseArray(int[] myArr) {
-        int[] temp = new int[5];
-        for (int i=0; i<5; i++){
+        int[] temp = new int[myArr.length];
+        for (int i=0; i< myArr.length; i++){
             temp [i] = myArr[i];
         }
-        for (int i=0; i<5; i++){
-            myArr [i] = temp[4-i];
+        for (int i=0; i< myArr.length; i++){
+            myArr [i] = temp[myArr.length-1-i];
         }
     }
 
     private static void printArray(int[] myArr) {
-        for (int i=0; i<5; i++){
+        for (int i=0; i<myArr.length; i++){
             System.out.print(myArr[i]+" ");
         }
         System.out.println();
