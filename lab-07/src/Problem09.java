@@ -13,15 +13,20 @@ public class Problem09 {
             index++;
         }
 
+        int minIndex = indexOfSmallestElement(myArr, index);
+        System.out.println("Index of smallest number: "+minIndex);
+    }
+
+    public static int indexOfSmallestElement(double[] myArr, int index) {
         double min = myArr[0];
         int minIndex=-1;
 
-        for (int i = index-1; i>=0; i--){
+        for (int i = index -1; i>=0; i--){
             if (min >= myArr[i]){
                 min = myArr[i];
                 minIndex = i;
             }
         }
-        System.out.println("Index of smallest number: "+minIndex);
+        return minIndex;
     }
 }
