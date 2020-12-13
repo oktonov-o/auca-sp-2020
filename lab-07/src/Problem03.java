@@ -14,9 +14,9 @@ public class Problem03 {
             myArr[i] = inp.nextInt();
         }
 
-        printArray(myArr);
+        printArray("Before reverse: ",myArr);
         reverseArray(myArr);
-        printArray(myArr);
+        printArray("After revrse: ",myArr);
     }
 
     private static void reverseArray(int[] myArr) {
@@ -29,7 +29,8 @@ public class Problem03 {
         }
     }
 
-    private static void printArray(int[] myArr) {
+    private static void printArray(String word,int[] myArr) {
+        System.out.print(word);
         for (int i=0; i<myArr.length; i++){
             System.out.print(myArr[i]+" ");
         }
