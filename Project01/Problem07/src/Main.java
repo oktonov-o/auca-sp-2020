@@ -21,7 +21,7 @@ public class Main extends PApplet {
     float angleE;
     final float dAngleE = 0.025f;
     float angleM;
-    final float dAngleM = 0.2f;
+    final float dAngleM = 0.1f;
     float angleV;
     final float dAngleV = 0.05f;
 
@@ -46,12 +46,9 @@ public class Main extends PApplet {
         fill(255,255,0);
         circle(sunX, sunY, SUN_D);
 
-        rotate(angleV);
-        fill(0,255,255);
-        circle(venusX, venusY, VENUS_D);
-        angleV += dAngleV;
+        pushMatrix();
 
-        rotate(-angleE);
+        rotate(angleE);
         fill(0,0,255);
         circle(earthX, earthY, EARTH_D);
         angleE += dAngleE;
@@ -61,6 +58,13 @@ public class Main extends PApplet {
         rotate(angleM);
         circle(moonX, moonY, MOON_D);
         angleM += dAngleM;
+
+        popMatrix();
+
+        rotate(angleV);
+        fill(0,255,255);
+        circle(venusX, venusY, VENUS_D);
+        angleV += dAngleV;
     }
 
     public static void main(String[] args) {
