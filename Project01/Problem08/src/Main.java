@@ -13,16 +13,12 @@ public class Main extends PApplet {
     float angle;
     float angle2;
     float dAngle = 0.05f;
-    int numOfStars;
 
     public void settings() {
         fullScreen();
     }
 
     public void setup() {
-        String str = JOptionPane.showInputDialog("Number of stars: ");
-        numOfStars = Integer.parseInt(str);
-
         r0 = min(width, height)/6f;
         rs = r0/2f;
     }
