@@ -1,6 +1,5 @@
 import processing.core.*;
 import javax.swing.*;
-import java.util.Random;
 
 public class Main extends PApplet {
 
