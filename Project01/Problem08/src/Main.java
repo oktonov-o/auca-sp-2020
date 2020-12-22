@@ -11,14 +11,23 @@ public class Main extends PApplet {
     float ys;
 
     float angle;
-    float angle2;
     float dAngle = 0.05f;
+    int numOfStars;
+    float angleBetweenStars;
 
     public void settings() {
         fullScreen();
     }
 
     public void setup() {
+        String str = JOptionPane.showInputDialog("Number of stars [ 2; 8] : ");
+        numOfStars = Integer.parseInt(str);
+        if (numOfStars>8 || numOfStars<2){
+            JOptionPane.showMessageDialog(null,"Incorrect input value!");
+            exit();
+        }
+
+        angleBetweenStars = 2*3.14f/numOfStars;
         r0 = min(width, height)/6f;
         rs = r0/2f;
     }
@@ -30,31 +39,17 @@ public class Main extends PApplet {
         rotate(angle);
         drawStar(r0, xo, yo, 255, 0, 0);
 
-        pushMatrix();
-        pushMatrix();
-        pushMatrix();
+        for (int i=0; i<numOfStars; i++){
+            pushMatrix();
+            rotate((i+1)*angleBetweenStars);
+            translate(0,2*r0);
+            rotate(-2*angle);
+            drawStar(rs, xs, ys, 0, 0, 255);
+            popMatrix();
+        }
 
-        translate(0,2*r0);
-        rotate(angle2);
-        drawStar(rs, xs, ys, 0, 0, 255);
-
-        popMatrix();
-        translate(0,-2*r0);
-        rotate(angle2);
-        drawStar(rs, xs, ys, 0, 0, 255);
-
-        popMatrix();
-        translate(2*r0, 0);
-        rotate(angle2);
-        drawStar(rs, xs, ys, 0, 0, 255);
-
-        popMatrix();
-        translate(-2*r0, 0);
-        rotate(angle2);
-        drawStar(rs, xs, ys, 0, 0, 255);
 
         angle += dAngle;
-        angle2 -= 2*dAngle;
     }
 
     public static void main(String[] args) {
